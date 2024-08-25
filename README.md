@@ -1,13 +1,13 @@
 # Fake_GPS
 This repository generates a fake GPS signal to help the drone position under the GPS-denied area.
 
-Goal: Once the experimenter taking the drone moves, then the Mission Planner will also show the moving route immediately.
+**Goal**: Once the experimenter who takes the drone moves, then the Mission Planner will also show the moving route immediately.
 ![image](https://github.com/jiahaubai/Fake_GPS/blob/main/idea.png)
 
 
-## Result
-We conducted this experiment in the NTU MD building [video] 
-
+**Result**
+We conducted this experiment in the NTU MD Building. The below figure shows the results in the resting state, which indicates that we can successfully position the drone indoors. Here are also attached the results of the dynamic experiment. [(link)](https://drive.google.com/file/d/1eMuFeqP7EJF8AYZbDSvlK68_LksFRa6S/view?usp=drive_link)
+![image](https://github.com/jiahaubai/Fake_GPS/blob/main/exp.png)
 
 
 
@@ -18,6 +18,8 @@ We conducted this experiment in the NTU MD building [video]
 * Pixhawk fly controller 4X (FC) on the drone
 * USB A to USB C cable (connect FC to RPi)
 * GIPS UWB sensors: 1 tag and 4 anchors
+  
+![image](https://github.com/jiahaubai/Fake_GPS/blob/main/hardware.png)
 
 ### Start Experiment:
 * Step 1: Download this repository to your RPi. Please make sure your RPi has already installed MAVProxy.  
