@@ -1,9 +1,9 @@
 # Fake_GPS
 This repository generates a fake GPS signal to help the drone position under the GPS-denied area.
 
-Goal: Once the experimenter taking the drone moves, then the Mission Planner will also show the moving route immediately
+Goal: Once the experimenter taking the drone moves, then the Mission Planner will also show the moving route immediately.
+![image](https://github.com/jiahaubai/Fake_GPS/blob/main/idea.png)
 
-Idea:
 
 ## Result
 We conducted this experiment in the NTU MD building [video] 
