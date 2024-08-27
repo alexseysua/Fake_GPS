@@ -2,12 +2,12 @@
 This repository provides code to generate a fake GPS signal, aiding the drone's positioning in GPS-denied areas.
 
 **Goal**: In a GPS-denied area, when the experimenter holding the drone moves, the GPS map in [Mission Planner](https://ardupilot.org/planner/) will immediately display their movement route.
-![image](https://github.com/jiahaubai/Fake_GPS/blob/main/idea.png)
+![image](https://github.com/jiahaubai/Fake_GPS/blob/main/images/idea.png)
 
 
 **Experiment Result**:
 We conducted this experiment in the NTU MD Building, where GPS signals are not available. After using this code, we were able to successfully position the drone indoors.
-[![Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)](https://drive.google.com/file/d/1eMuFeqP7EJF8AYZbDSvlK68_LksFRa6S/view?usp=sharing)
+[![Watch the video](https://github.com/jiahaubai/Fake_GPS/blob/main/images/video_cover.PNG)](https://drive.google.com/file/d/1eMuFeqP7EJF8AYZbDSvlK68_LksFRa6S/view?usp=sharing)
 
 ## Usage
 
@@ -17,7 +17,9 @@ We conducted this experiment in the NTU MD Building, where GPS signals are not a
 * USB A to USB C cable (connect FC to RPi)
 * GIPS UWB sensors: 1 tag and 4 anchors
   
-![image](https://github.com/jiahaubai/Fake_GPS/blob/main/hardware.png)
+![image](https://github.com/jiahaubai/Fake_GPS/blob/main/images/hardware.png)
+
+
 
 ### Start Experiment:
 * Step 1: Download this repository to your RPi. Please ensure that [MAVProxy](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html) is already installed on your RPi.  
