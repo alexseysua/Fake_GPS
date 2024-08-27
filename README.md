@@ -5,11 +5,9 @@ This repository provides code to generate a fake GPS signal, aiding the drone's 
 ![image](https://github.com/jiahaubai/Fake_GPS/blob/main/idea.png)
 
 
-**Result**:
-We conducted this experiment in the NTU MD Building. The below figure shows the results in the resting state, which indicates that we can successfully position the drone indoors. Here are also attached the results of the dynamic experiment. [(link)](https://drive.google.com/file/d/1eMuFeqP7EJF8AYZbDSvlK68_LksFRa6S/view?usp=drive_link)
-![image](https://github.com/jiahaubai/Fake_GPS/blob/main/exp1.png)
-
-
+**Experiment Result**:
+We conducted this experiment in the NTU MD Building, where GPS signals are not available. After using this code, we were able to successfully position the drone indoors.
+[![Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)](https://drive.google.com/file/d/1eMuFeqP7EJF8AYZbDSvlK68_LksFRa6S/view?usp=sharing)
 
 ## Usage
 
