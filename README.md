@@ -1,7 +1,7 @@
 # Fake_GPS
-This repository generates a fake GPS signal to help the drone position under the GPS-denied area.
+This repository provides code to generate a fake GPS signal, aiding the drone's positioning in GPS-denied areas.
 
-**Goal**: Once the experimenter who takes the drone moves, then the Mission Planner will also show the moving route immediately.
+**Goal**: In a GPS-denied area, when the experimenter holding the drone moves, the GPS map in [Mission Planner](https://ardupilot.org/planner/) will immediately display their movement route.
 ![image](https://github.com/jiahaubai/Fake_GPS/blob/main/idea.png)
 
 
