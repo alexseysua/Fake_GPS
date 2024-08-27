@@ -17,7 +17,7 @@ We conducted this experiment in the NTU MD Building, where GPS signals are not a
 * Pixhawk Fly Controller (FC) 4X on the drone
 * USB A to USB C cable (connect FC to RPi)
 * Drone Remote Controller
-* GIPS UWB sensors: 1 tag and 4 anchors
+* UWB sensors: 1 tag and 4 anchors (from [GIPS](https://www.gips.com.tw/))
   
 ![image](https://github.com/jiahaubai/Fake_GPS/blob/main/images/hardware.png)
 
