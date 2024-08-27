@@ -13,20 +13,20 @@ We conducted this experiment in the NTU MD Building, where GPS signals are not a
 
 ### Hardware Requirements:
 * Raspberry Pi 3B+ (RPi)        
-* Pixhawk fly controller 4X (FC) on the drone
+* Pixhawk Fly Controller (FC) 4X on the drone
 * USB A to USB C cable (connect FC to RPi)
 * GIPS UWB sensors: 1 tag and 4 anchors
   
 ![image](https://github.com/jiahaubai/Fake_GPS/blob/main/hardware.png)
 
 ### Start Experiment:
-* Step 1: Download this repository to your RPi. Please make sure your RPi has already installed MAVProxy.  
-* Step 2: Connect the FC and the tag to your RPi.  
-* Step 3: Set up the anchors to the experimental area and record their coordinates (you can define by yourself).  
-* Step 4: Open the two terminals from your RPi. One is for **UDP Client** where `main.py` is executed, and another is for **UDP Server** where `mavproxy.py` is executed. Please execute `mavproxy.py` first, also you have to open the drone remote controller at the same time to ensure that `mavproxy.py` can run successfully.  
+* Step 1: Download this repository to your RPi. Please ensure that [MAVProxy](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html) is already installed on your RPi.  
+* Step 2: Connect the flight controller (FC) and the tag to your RPi.  
+* Step 3: Set up the anchors in the experimental area and record their coordinates (you can define them yourself). Additionally, please select an anchor as the latitude and longitude reference point and modify this information in the `main.py` file accordingly.
+* Step 4: Open two terminals on your Raspberry Pi (RPi). One terminal is for the UDP Client, where main.py will be executed, and the other is for the UDP Server, where mavproxy.py will be executed. Please run mavproxy.py first, and make sure to turn on the drone remote controller simultaneously to ensure that mavproxy.py runs successfully.  
 * Step 5: Open the Mission Planner and check whether your drone shows on the GPS map. If all the above execution goes smoothly, you can start taking the drone and move.
 
-**Note**: In `Step 2` and `Step 3`, you have to also modify their info, such as the anchor positions and serial ports, in the `main.py` starting from `line 97`.
+**Note**: In `Step 2` and `Step 3`, you need to modify the experiment settings you configured, such as the anchor positions and serial ports, in the main.py file starting from `line 97`.
 
 ```
 ####### anchor info                                    
@@ -36,9 +36,9 @@ We conducted this experiment in the NTU MD Building, where GPS signals are not a
                         [27, 0, 1.11]]
                         
     ####### info of GPS_simulate func
-    # rotation angle of y-axis
+    # The counterclockwise rotation angle between the y-axis (you define) and the north.
     rotate_theta = 322
-    # the position of the reference anchor where its ENU coordinates is (0,0,1.1)
+    # The position of the reference anchor where its ENU coordinates is (0,0,1.1)
     lon_ref = 121.5444161
     lat_ref = 25.0176494
     height = 1.1
